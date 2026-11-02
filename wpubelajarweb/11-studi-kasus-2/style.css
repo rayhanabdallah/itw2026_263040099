@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* =========================================
+   1. CSS RESET & GLOBAL
+   ========================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #263238;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #263238;
+    margin-bottom: 12px;
+}
+
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2365B1;
+    color: #ffffff;
+    border-bottom: 4px solid #dbb866;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+header .tag {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: #ffffff;
+    padding: 6px 16px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+
+main {
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.profile-card .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #2365B1;
+    object-fit: cover;
+    margin: 0 auto 25px auto;
+}
+
+.profile-card .bio {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    font-size: 0.95em;
+    line-height: 1.8;
+    color: #4a5568;
+}
+
+.profile-card .bio p {
+    margin-bottom: 15px;
+}
+
+
+.profile-card .stats {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    margin: 8px;
+    text-align: center;
+}
+
+.stats-item {
+    background-color: #FFF8F0;
+    border: 1px solid #FFD166;
+    border-radius: 12px;
+    padding: 16px 12px;
+}
+
+.stat-value {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #E85D5D;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.discography {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.discography h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.album-list {
+    text-align: center;
+}
+
+.album-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.album-card .album-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.album-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.album-card p {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.btn-listen {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #FF6F61;
+    transition: background-color 0.3s ease;
+}
+
+.btn-listen:hover {
+    background-color: #e85d4f;
+}
+
+.social-links {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 35px 20px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+}
+
+.social-links h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    background-color: #2365B1;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    margin: 6px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #1a4f8b;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #263238;
+    color: #FFF8F0;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    border-top: 4px solid #FF6F61;
+}
+
+footer p {
+    margin: 4px 0;
+}
